@@ -1,11 +1,10 @@
 import React from 'react'
-import { Input } from 'antd'
+import { } from 'antd'
 
 const Chat = () => {
     return (
         <div className="join-container">
-            <h1>Musicord</h1>
-            <Input placeholder="Name" />
+            Chat
         </div>
     )
 }
