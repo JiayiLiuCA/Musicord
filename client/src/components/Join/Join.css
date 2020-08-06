@@ -1,0 +1,13 @@
+.join-outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.join-container {
+    width: 85%;
+    max-width: 400px;
+    height: auto;
+}
