@@ -1,0 +1,12 @@
+.chat-outer-container {
+    height: 100%;
+    width: 100%;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #f0f2f5;
+}

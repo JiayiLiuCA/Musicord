@@ -1,0 +1,26 @@
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: #001529;  
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0 !important;
+    padding-left: 50px;
+    width: 200px;
+    color: rgba(255,255,255,.65);
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+.leave-room{
+    padding-right: 50px;
+
+}
+.leave-room button {
+    cursor: pointer;
+}
