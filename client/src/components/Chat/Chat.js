@@ -4,7 +4,7 @@ import './Chat.css'
 import Sidebar from './ChatComponents/Sidebar/Sidebar'
 import Header from './ChatComponents/Header/Header'
 import Footer from './ChatComponents/Footer/Footer'
-
+import Content from './ChatComponents/Content/Content'
 
 const Chat = () => {
     const [users, setUsers] = useState([]);
@@ -14,6 +14,7 @@ const Chat = () => {
                 <Header />
                 <div className="mid">
                     <Sidebar />
+                    <Content />
                 </div>
                 <Footer />
             </div>

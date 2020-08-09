@@ -1,6 +1,7 @@
 import './Header.css'
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -9,7 +10,9 @@ const Header = () => {
                 <strong>Musicord</strong>
             </div>
             <div className="leave-room">
-                <button>Leave</button>
+                <Link to="/">
+                    <button>Leave</button>
+                </Link>
             </div>
         </div>
     )

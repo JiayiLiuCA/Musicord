@@ -7,11 +7,13 @@ const Sidebar = () => {
         <div className="sidebar">
             <div className="room">
                 <h3>Room Name:</h3>
-                <p style={{fontSize: '22px'}}>Bach</p>
-                <h3>Users</h3>
-                
+                <p style={{ fontSize: '22px' }}>Bach</p>
+
             </div>
-            
+            <div className="users">
+                <h3>Users</h3>
+            </div>
+
         </div>
     )
 }
