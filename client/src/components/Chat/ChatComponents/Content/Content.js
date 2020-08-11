@@ -1,6 +1,6 @@
 import React from 'react'
 import './Content.css'
-import Message from './Message/Message'
+import Message from './Message'
 
 const Content = () => {
     return (

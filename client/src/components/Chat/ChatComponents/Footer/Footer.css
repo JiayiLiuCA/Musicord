@@ -3,8 +3,35 @@
 
     height: 80px;
     width: 100%;
-    color: rgba(255,255,255,.65);
-    background-color: #001529; 
-
     
+    background-color: #001529; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#input-container {
+    display: flex;
+    height: 40px;
+    width:80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+#msg {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    padding-left: 10px;
+    
+}
+
+.chat-button {
+    height: 100%;
+    width: 100px;
+    border: 0;
+    cursor: pointer;
+
 }

@@ -1,7 +1,10 @@
 .content {
-    padding: 25px;
+    padding-left: 20px;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     height: 100%;
-    overflow: auto;
+    overflow-y: scroll;
     flex-grow: 1;
     background-color: #ffffff;
 }
