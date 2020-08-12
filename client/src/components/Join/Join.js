@@ -13,7 +13,7 @@ const Join = () => {
     const history = useHistory();
     const onFinish = values => {
         //console.log(values);
-        history.push(`/chat?name=${values.name}&room=${values.room}`);
+        history.push(`/chat?username=${values.username}&room=${values.room}`);
     }
 
     return (
@@ -21,7 +21,7 @@ const Join = () => {
             <div className="join-container">
                 <h1>Musicord</h1>
                 <Form layout='vertical' initialValues={{ room: 'Bach' }} onFinish={onFinish}>
-                    <Form.Item name="name" label="Name" rules={[{ required: true }]}>
+                    <Form.Item name="username" label="Username" rules={[{ required: true }]}>
                         <Input size="large" placeholder="Enter username..." />
                     </Form.Item>
                     <Form.Item name="room" label="Room" >

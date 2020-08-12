@@ -7,12 +7,13 @@
     flex-direction: column;
 }
 
-.room {
+.room, .users {
     padding: 10px;
 }
 
-.room h3{
-    padding-top: 15px;
-    
+.sidebar p {
+    margin: 0;
 }
+
+
 

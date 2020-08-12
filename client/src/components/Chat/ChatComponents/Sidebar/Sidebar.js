@@ -2,18 +2,19 @@ import React from 'react'
 import './Sidebar.css'
 
 
-const Sidebar = ({ room, userList }) => {
+
+const Sidebar = ({ room, usernameList }) => {
     return (
         <div className="sidebar">
             <div className="room">
                 <h3>Room Name:</h3>
-                <p style={{ fontSize: '22px' }}>{room}</p>
+                <p style={{ fontSize: '20px', margin: '0'}}>{room}</p>
 
             </div>
             <div className="users">
                 <h3>Users</h3>
-                {userList.map(
-                    user => <p key={user} style={{ fontSize: '22px' }}>{user}</p>
+                {usernameList.map(
+                    (username,index) => <p key={`${username}${index}`} style={{ fontSize: '20px' }}>{username}</p>
                 )}
             </div>
 
