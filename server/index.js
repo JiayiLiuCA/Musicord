@@ -47,15 +47,16 @@ io.on('connection', socket => {
 
     socket.on('disconnecting', () => {
         let user = getUser(socket.id);
-        console.log(user);
+        removeUser(socket.id);
+        //console.log(user);
         socket.broadcast
             .to(user.room)
             .emit('chatMessage', {username: 'Musicord bot', text: `${user.username} has left the chat`})
         socket.broadcast
             .to(user.room)
-            .emit('userLeft', user.username)
+            .emit('curUsernameList', getUsernameList(user.room))
         console.log(user.username , "left")
-        removeUser(socket.id);
+        //removeUser(socket.id);
     })
     
 

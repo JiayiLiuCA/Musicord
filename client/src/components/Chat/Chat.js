@@ -47,7 +47,7 @@ const Chat = ({location}) => {
 
         // Emit join to server
         socket.emit('join', {username,room});
-        // Initial usernameList when join
+        // update usernameList when user join and other users leave
         socket.on('curUsernameList', usernameList => {
             setUsernameList(usernameList);
         })
@@ -58,12 +58,6 @@ const Chat = ({location}) => {
         // Listen to server chat message
         socket.on('chatMessage', ({username, text}) => {
             setMessages(messages => [...messages, {username, text}]);
-        })
-
-        socket.on('userLeft', username => {
-            let newUsernameList = usernameList.filter(name => name !== username);
-            console.log(newUsernameList)
-            setUsernameList(newUsernameList);
         })
 
         // Disconnect cleanup
