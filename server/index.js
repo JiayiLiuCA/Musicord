@@ -16,7 +16,7 @@ const io = socketio(server);
 
 // Run when cliend connects
 io.on('connection', socket => {
-    console.log('We have a new connection');
+    
 
     // User join room
     socket.on('join', ({username,room}) => {
@@ -26,7 +26,7 @@ io.on('connection', socket => {
         // Join room
         socket.join(user.room);
 
-        console.log("add user " , username)
+        
         // Emit curUsernameList to joined user
         socket.emit('curUsernameList', getUsernameList(user.room));
         // Broadcast userjoin event to other users in the room, username only
@@ -55,7 +55,7 @@ io.on('connection', socket => {
         socket.broadcast
             .to(user.room)
             .emit('curUsernameList', getUsernameList(user.room))
-        console.log(user.username , "left")
+        
         //removeUser(socket.id);
     })
     
