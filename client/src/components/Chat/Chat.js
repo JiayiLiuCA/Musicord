@@ -47,11 +47,11 @@ const Chat = ({location}) => {
 
         // Emit join to server
         socket.emit('join', {username,room});
-        // update usernameList when user join and other users leave
-        socket.on('curUsernameList', usernameList => {
+        // update usernameList when user join and other users leave [O(n) time complexity]
+        socket.on('curUsernameList', usernameList => { 
             setUsernameList(usernameList);
         })
-        // Listen to user join
+        // Listen to user join and add username to usernameList [O(1) time complexity]
         socket.on('userJoin', username => {
             setUsernameList(usernameList => [...usernameList, username]);
         })
